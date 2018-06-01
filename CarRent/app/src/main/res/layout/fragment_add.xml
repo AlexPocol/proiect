@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".app.view.fragments.AddFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimary"
+        android:paddingTop="10dp">
+
+        <EditText
+            android:id="@+id/carNameAdd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:backgroundTint="@color/colorAccent"
+            android:hint="Car name"
+            android:inputType="text"
+            android:textColorHint="@color/colorText"
+            android:textColor="@color/colorText" />
+
+        <EditText
+            android:id="@+id/carPriceAdd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/carNameAdd"
+            android:layout_margin="10dp"
+            android:backgroundTint="@color/colorAccent"
+            android:inputType="number"
+            android:hint="Price"
+            android:textColorHint="@color/colorText"
+            android:textColor="@color/colorText" />
+
+        <EditText
+            android:id="@+id/carDescriptionAdd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/carPriceAdd"
+            android:layout_margin="10dp"
+            android:backgroundTint="@color/colorAccent"
+            android:hint="Description"
+            android:textColorHint="@color/colorText"
+            android:inputType="text"
+            android:textColor="@color/colorText" />
+
+        <Button
+            android:id="@+id/addBtn"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/carDescriptionAdd"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/round_btn"
+            android:elevation="10dp"
+            android:text="Add"
+            android:textColor="@color/colorText" />
+
+    </RelativeLayout>
+
+</FrameLayout>

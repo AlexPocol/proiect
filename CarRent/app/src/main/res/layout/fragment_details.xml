@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".app.view.fragments.DetailsFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimary">
+
+        <TextView
+            android:id="@+id/carName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:text="Car: "
+            android:textColor="@color/colorText" />
+
+        <TextView
+            android:id="@+id/carNameTextDetails"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="20dp"
+            android:layout_toRightOf="@+id/carName"
+            android:text="Skoda Superb"
+            android:textColor="@color/colorText" />
+
+        <TextView
+            android:id="@+id/price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/carName"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:text="Price: "
+            android:textColor="@color/colorText" />
+
+        <TextView
+            android:id="@+id/priceTextDetails"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/carName"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="20dp"
+            android:layout_toRightOf="@+id/price"
+            android:text="35 $"
+            android:textColor="@color/colorText" />
+
+        <TextView
+            android:id="@+id/description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/price"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:text="Description: "
+            android:textColor="@color/colorText" />
+
+        <TextView
+            android:id="@+id/descriptionTextDetails"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/price"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="20dp"
+            android:layout_toRightOf="@+id/description"
+            android:text="motor de 1.5"
+            android:textColor="@color/colorText" />
+
+        <Button
+            android:id="@+id/rentBtn"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/descriptionTextDetails"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/round_btn"
+            android:elevation="10dp"
+            android:text="Rent"
+            android:textColor="@color/colorText" />
+
+    </RelativeLayout>
+
+</FrameLayout>
